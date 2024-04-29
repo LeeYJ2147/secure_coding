@@ -57,8 +57,10 @@ int main()
     char phone[15];
     puts("Input number to check: ");
     gets(phone);
-    if(checking_phone(phone)) puts("ok");
-    else puts("not permitted");
-    
+    if (checking_phone(phone))
+        puts("ok");
+    else
+        puts("not permitted");
+
     return 0;
 }
