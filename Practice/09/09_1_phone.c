@@ -67,6 +67,19 @@ int checking_phone(char *phone)
     return 1;
 }
 
+int scanf_str(char *toSave, int term)
+{
+    int i=0;
+    while(i<term)
+    {
+        char temp;
+        scanf("%c", &temp);
+        if(temp == '\0' || temp == '\n') return 0;
+        else toSave[i++] = temp;
+    }
+    return 1;
+}
+
 int main()
 {
     int firstDash, secondDash;
